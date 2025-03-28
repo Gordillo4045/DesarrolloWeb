@@ -104,8 +104,8 @@ export default function IndexPage() {
             Actividad 2, 3 y 4
           </div>
         </div>
-        <Card className="w-full max-w-lg p-6 backdrop-blur-md bg-white/30 dark:bg-black/30 border border-white/20">
-          <h1 className={`${title({ color: "violet", size: 'xs' })} mb-6 flex items-center justify-between`}>
+        <Card className="w-full max-w-lg p-3 md:p-6 backdrop-blur-md bg-white/30 dark:bg-black/30 border border-white/20">
+          <h1 className={`${title({ color: "violet", size: 'xs' })} mb-2 flex items-center justify-between`}>
             {editingUserId ? "Editar Usuario" : "Registro de Usuarios"}
             {editingUserId && (
               <Button
@@ -125,9 +125,9 @@ export default function IndexPage() {
             key={editingUserId || 'new'}
           />
         </Card>
-        <div className="absolute left-0 bottom-0 -z-10 m-auto h-[400px] w-[400px] rounded-full bg-blue-400 opacity-20 blur-[100px]">
+        <div className="absolute left-0 -bottom-32 md:bottom-0 -z-10 m-auto h-[400px] w-[400px] rounded-full bg-blue-400 opacity-20 blur-[100px]">
         </div>
-        <Card className="mt-10 w-full max-w-lg md:max-w-full p-6 backdrop-blur-md bg-white/30 dark:bg-black/30 border border-white/20">
+        <Card className="mt-10 w-full max-w-lg md:max-w-full p-3 md:p-6 backdrop-blur-md bg-white/30 dark:bg-black/30 border border-white/20">
           <h2 className={`${title({ color: "blue", size: 'xs' })} mb-2 flex items-center justify-between`}>
             Usuarios Registrados
           </h2>
